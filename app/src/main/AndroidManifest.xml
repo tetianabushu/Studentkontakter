@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bushu.studentkontakter">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/kontakter_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".Studenter"
+            android:label="@string/title_activity_studenter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Meldinger"
+            android:label="@string/title_activity_meldinger" />
+        <activity
+            android:name=".LeggTilStudent"
+            android:label="@string/title_activity_legg_til_student" />
+        <activity
+            android:name=".SendMelding"
+            android:label="@string/title_activity_legg_til_melding" />
+        <activity
+            android:name=".KontaktDetaljer"
+            android:label="@string/title_activity_kontakt_detaljer" />
+        <activity
+            android:name=".Preferanser"
+            android:label="" />
+
+        <service android:name=".service.SmsService" />
+        <service android:name=".service.UkentligService" />
+        <service android:name=".service.SettPeriodiskService" />
+
+        <receiver
+            android:name=".service.SmsBroadcastReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="com.example.SmsBroadcast" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".service.UkentligBroadcastReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="com.example.ukentligbroadcast" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".VisMelding"></activity>
+    </application>
+
+</manifest>

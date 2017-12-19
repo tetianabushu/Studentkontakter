@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bushu.studentkontakter.Studenter">
+
+    <item
+        android:id="@+id/melding_ikon"
+        android:orderInCategory="100"
+        android:icon="@drawable/meldinger"
+        android:title="@string/melding_menu_icon"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/kontakter_ikon"
+        android:orderInCategory="100"
+        android:icon="@drawable/kontakter_icon"
+        android:title="@string/kontakt_menu_icon"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/settings_icon"
+        android:orderInCategory="100"
+        android:icon="@drawable/settings"
+        android:layout_margin="@dimen/menu_meldinger"
+        android:title="@string/settings_menu_icon"
+        app:showAsAction="always" />
+
+</menu>

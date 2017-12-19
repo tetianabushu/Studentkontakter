@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:onClick="viseDetaljer"
+    android:paddingBottom="5dp"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/kontakter_icon" />
+
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="fill_horizontal|center"
+        android:paddingLeft="15dp"
+        android:text="Kontakt"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textSize="20sp" />
+
+</LinearLayout>

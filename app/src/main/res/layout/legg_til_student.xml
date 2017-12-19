@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bushu.studentkontakter.LeggTilStudent"
+    android:weightSum="1">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/apptoolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+
+            android:id="@+id/fornavnlabel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="65dp"
+            android:layout_weight="0.02"
+            android:text="Skriv inn fornavn:"
+            android:textColor="?attr/editTextColor"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/fornavn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:inputType="text" />
+
+        <TextView
+
+            android:id="@+id/etternavnlabel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.02"
+            android:text="Skriv in etternavn:"
+            android:textColor="?attr/editTextColor"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etternavn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_weight="0.03"
+            android:inputType="text" />
+
+        <TextView
+
+            android:id="@+id/telefonlabel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.02"
+            android:text="Skriv in telefon:"
+            android:textColor="?attr/editTextColor"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/telefonnr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.01"
+            android:ems="10"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_weight="0.02"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/avbryt"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="?attr/colorAccent"
+                android:clickable="true"
+                android:onClick="avbrytbtn"
+                android:text="AVBRYT" />
+
+            <Button
+                android:id="@+id/savebutton"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+
+                android:background="?attr/colorAccent"
+                android:clickable="true"
+                android:onClick="leggtil"
+                android:text="Lagre" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
